@@ -8,7 +8,8 @@ export default function Login({ onAuth }) {
   const [error, setError] = useState('');
   const [form, setForm] = useState({ name: '', email: '', password: '' });
 
-  const API_BASE = import.meta.env.VITE_BACKEND_URL || 'http://localhost:8000';
+  // If VITE_BACKEND_URL is provided, use it. Otherwise use relative path and rely on Vite proxy.
+  const API_BASE = import.meta.env.VITE_BACKEND_URL || '';
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });

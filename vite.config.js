@@ -25,6 +25,19 @@ export default defineConfig({
       '.modal.host',
       'localhost',
       '127.0.0.1'
-    ]
+    ],
+    proxy: {
+      // Forward API calls from the frontend dev server to the FastAPI backend
+      '/auth': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+        secure: false,
+      },
+      '/api': {
+        target: 'http://localhost:8000',
+        changeOrigin: true,
+        secure: false,
+      }
+    }
   }
 })
