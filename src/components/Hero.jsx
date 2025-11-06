@@ -10,7 +10,7 @@ export default function Hero() {
 
       {/* 3D Spline Scene */}
       <div className="absolute right-0 top-0 h-full w-full md:w-3/5">
-        <Spline scene="https://prod.spline.design/wwTRdG1D9CkNs368/scene.splinecode" style={{ width: '100%', height: '100%' }} />
+        <Spline scene="https://prod.spline.design/qQUip0dJPqrrPryE/scene.splinecode" style={{ width: '100%', height: '100%' }} />
       </div>
 
       {/* Content */}
@@ -22,7 +22,7 @@ export default function Hero() {
             transition={{ duration: 0.6 }}
             className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-white/80 backdrop-blur">
             <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-tr from-violet-400 to-sky-400" />
-            Futuristic 3D interactions
+            Verified, holographic identity card
           </motion.span>
 
           <motion.h1
@@ -30,7 +30,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.1, duration: 0.7 }}
             className="mt-6 text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-6xl">
-            Elevate your brand with immersive, interactive design
+            A modern identity experience for your product
           </motion.h1>
 
           <motion.p
@@ -38,7 +38,7 @@ export default function Hero() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.7 }}
             className="mt-6 max-w-xl text-base leading-relaxed text-white/70 md:text-lg">
-            A smooth, responsive landing crafted with subtle motion, bold gradients, and a real-time 3D scene that reacts to your visitors.
+            Smooth onboarding with a secure account system and an interactive 3D hero that reacts to every move.
           </motion.p>
 
         <motion.div
